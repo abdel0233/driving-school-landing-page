@@ -1,13 +1,13 @@
 import heroCar from "@/assets/hero-car.jpg";
-const video1 = "https://res.cloudinary.com/dkjsjwzvl/raw/upload/v1778251715/uc_kyx4ow";
-const video2 = "https://res.cloudinary.com/dkjsjwzvl/raw/upload/v1778251814/uc_ttvdki";
-const video3 = "https://res.cloudinary.com/dkjsjwzvl/raw/upload/v1778251868/uc_psudpu";
-const video4 = "https://res.cloudinary.com/dkjsjwzvl/raw/upload/v1778251948/uc_a8ggd9";
+const video1 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254324/project-1-1_3MHAbghf_kruq3c.mp4";
+const video2 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254345/project-2_ZY1ECD30_awtpcc.mp4";
+const video3 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254333/project-3-1_DECoIJf2_ijd5r9.mp4";
+const video4 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254334/project-4_AYsTYSj5_qztqhn.mp4";
 const video5 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778252003/uc_m7m5hu.mp4";
 const video6 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778252097/uc_hjsqn5.mp4";
-const video7 = "https://res.cloudinary.com/dkjsjwzvl/raw/upload/v1778252159/uc_yl04ti";
-const video8 = "https://res.cloudinary.com/dkjsjwzvl/raw/upload/v1778252255/uc_mm3owa";
-const video9 = "https://res.cloudinary.com/dkjsjwzvl/raw/upload/v1778252330/uc_cdfvyc";
+const video7 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254349/chihab-1f_3L6ZdXjX_ja9mbw.mp4";
+const video8 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254338/chihab-2f_rqtAQjpj_zzobvp.mp4";
+const video9 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254339/chihab-3f_rOKObkad_sguigo.mp4";
 import { useRef, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import {
