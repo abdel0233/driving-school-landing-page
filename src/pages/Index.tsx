@@ -1,13 +1,13 @@
 import heroCar from "@/assets/hero-car.jpg";
-const video1 = "https://drive.google.com/uc?export=download&id=1fBC2IceLvbEsaYY9_jpDNoLClPoyJXpF";
-const video2 = "https://drive.google.com/uc?export=download&id=1EmI-u7CiUWgbaXlK3fA1qe45noPBnUGs";
-const video3 = "https://drive.google.com/uc?export=download&id=1YpYvXWzIRkiI012ozoiPGPvcjBq1N98v";
-const video4 = "https://drive.google.com/uc?export=download&id=1Av_fH-NgbcVU5TQsNQj7EMcR4mSTa56u";
-const video5 = "https://drive.google.com/uc?export=download&id=1BbVps0-KAqwQlo4N91JYfVJedsza_c-q";
-const video6 = "https://drive.google.com/uc?export=download&id=12lyvDI6owXGFEKHeaeOqFl3RUSI3NWvQ";
-const video7 = "https://drive.google.com/uc?export=download&id=1ZVY5_G56hIIqeuz7e3JSy8lMAWywM7Md";
-const video8 = "https://drive.google.com/uc?export=download&id=18i8QVdRuvOdO4ewd9e5Z1m9GXslGWaKS";
-const video9 = "https://drive.google.com/uc?export=download&id=1zXLSM-kqgOTLoisUmiyuZarjRLeLPBzE";
+const video1 = "https://res.cloudinary.com/dkjsjwzvl/raw/upload/v1778251715/uc_kyx4ow";
+const video2 = "https://res.cloudinary.com/dkjsjwzvl/raw/upload/v1778251814/uc_ttvdki";
+const video3 = "https://res.cloudinary.com/dkjsjwzvl/raw/upload/v1778251868/uc_psudpu";
+const video4 = "https://res.cloudinary.com/dkjsjwzvl/raw/upload/v1778251948/uc_a8ggd9";
+const video5 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778252003/uc_m7m5hu.mp4";
+const video6 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778252097/uc_hjsqn5.mp4";
+const video7 = "https://res.cloudinary.com/dkjsjwzvl/raw/upload/v1778252159/uc_yl04ti";
+const video8 = "https://res.cloudinary.com/dkjsjwzvl/raw/upload/v1778252255/uc_mm3owa";
+const video9 = "https://res.cloudinary.com/dkjsjwzvl/raw/upload/v1778252330/uc_cdfvyc";
 import { useRef, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import {
