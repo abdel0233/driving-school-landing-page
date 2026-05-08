@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 100 24% 13%;
+
+    --forest: 100 24% 13%;
+    --forest-foreground: 40 33% 96%;
+    --cream: 40 33% 96%;
+    --ink: 100 24% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 100 24% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 100 24% 13%;
+
+    --primary: 100 24% 13%;
+    --primary-foreground: 40 33% 96%;
+
+    --secondary: 40 20% 94%;
+    --secondary-foreground: 100 24% 13%;
+
+    --muted: 40 15% 92%;
+    --muted-foreground: 100 8% 35%;
+
+    --accent: 40 33% 96%;
+    --accent-foreground: 100 24% 13%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 40 33% 96%;
+
+    --border: 100 10% 88%;
+    --input: 100 10% 88%;
+    --ring: 100 24% 13%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .display-xl {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+  }
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+  .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}

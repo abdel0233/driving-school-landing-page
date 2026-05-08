@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "Services": "Services",
+    "Portfolio": "Portfolio",
+    "Results": "Résultats",
+    "Contact": "Contact",
+    "getFreeAudit": "Obtenir un Audit Gratuit"
+  },
+  "hero": {
+    "since": "Depuis 2020",
+    "schoolsScaled": "Plus de 50 Auto-écoles Développées",
+    "marketingFor": "Marketing pour auto-écoles",
+    "weMarket": "Nous développons les auto-écoles",
+    "wantToGrow": "qui veulent grandir.",
+    "description": "Une agence boutique pour auto-écoles. Nous remplissons vos voitures avec des élèves sérieux — grâce à des publicités, du contenu et des systèmes conçus pour votre ville.",
+    "bookAudit": "Réserver un Audit Gratuit",
+    "seeWork": "Voir notre travail"
+  },
+  "pains": {
+    "theReality": "La réalité",
+    "struggling": "Du mal à remplir vos voitures ?",
+    "items": [
+      {
+        "title": "Sièges vides, coûts en hausse",
+        "text": "Vos voitures restent à l'arrêt pendant que les frais fixes continuent de grimper chaque mois."
+      },
+      {
+        "title": "Toujours les mêmes recommandations",
+        "text": "Vous comptez sur le bouche-à-oreille et cela limite votre vitesse de croissance."
+      },
+      {
+        "title": "Des publicités qui brûlent votre budget",
+        "text": "Des publications boostées qui n'attirent que des curieux, jamais d'élèves sérieux."
+      }
+    ]
+  },
+  "services": {
+    "whatWeDo": "Ce que nous faisons",
+    "fiveLevers": "Cinq leviers.",
+    "oneEngine": "Un moteur de croissance.",
+    "description": "Chaque service est conçu pour un seul secteur : le vôtre. Pas de stratégies génériques, pas de contrats gonflés, pas de surprises.",
+    "items": [
+      {
+        "title": "Publicités Payantes",
+        "text": "Des entonnoirs Meta et TikTok conçus pour remplir votre calendrier chaque semaine."
+      },
+      {
+        "title": "Réseaux Sociaux",
+        "text": "Des systèmes de contenu qui font de votre auto-école la référence locale."
+      },
+      {
+        "title": "SEO",
+        "text": "Soyez premier quand les habitants cherchent des cours de conduite dans votre ville."
+      },
+      {
+        "title": "Production Vidéo",
+        "text": "Des tournages cinématographiques dans vos voitures — conçus pour convertir."
+      },
+      {
+        "title": "Google My Business",
+        "text": "Avis, photos et classement — dominez la carte de votre quartier."
+      }
+    ]
+  },
+  "portfolio": {
+    "selectedWork": "Travaux sélectionnés",
+    "workSpeaks": "Notre travail parle de lui-même.",
+    "items": [
+      { "label": "Campagne Facebook Ads — Auto-École Marrakech" },
+      { "label": "Film de Marque — Drive Académie Casablanca" },
+      { "label": "Série TikTok — Permis Express Lyon" },
+      { "label": "Entonnoir de Recrutement — Stadt Fahrschule Berlin" },
+      { "label": "Présentation Cinématographique — Auto-École Khadija" },
+      { "label": "Film Promotionnel — Auto-École Khadija" },
+      { "label": "Réussite des Élèves — Auto-École Chihab (Partie 1)" },
+      { "label": "Réussite des Élèves — Auto-École Chihab (Partie 2)" },
+      { "label": "Réussite des Élèves — Auto-École Chihab (Partie 3)" }
+    ]
+  },
+  "stats": {
+    "items": [
+      { "l": "Auto-écoles Développées" },
+      { "l": "Prospects Qualifiés" },
+      { "l": "ROI Moyen" },
+      { "l": "Années de Spécialisation" }
+    ]
+  },
+  "quotes": {
+    "items": [
+      {
+        "q": "Nous sommes passés de 12 à 47 inscriptions par mois. Ils comprennent notre métier mieux que nous.",
+        "name": "Yassine El Amrani",
+        "city": "Auto-École Atlas — Marrakech"
+      },
+      {
+        "q": "La première agence qui apporte de vrais chiffres. Nos voitures ne sont plus jamais vides.",
+        "name": "Claire Dubois",
+        "city": "Permis Express — Lyon"
+      },
+      {
+        "q": "Rien que le travail vidéo a changé la façon dont la ville nous perçoit. Les réservations ont doublé en 90 jours.",
+        "name": "Marco Rinaldi",
+        "city": "Scuola Guida Centro — Milan"
+      }
+    ]
+  },
+  "steps": {
+    "theProcess": "Le processus",
+    "threeSteps": "Trois étapes",
+    "empty": "du vide",
+    "toFullyBooked": "au calendrier plein.",
+    "items": [
+      {
+        "t": "Audit Gratuit",
+        "d": "Nous analysons votre entonnoir, vos publicités et votre réputation. Vous recevez un rapport écrit sous 48 heures."
+      },
+      {
+        "t": "Stratégie Sur-mesure",
+        "d": "Un plan personnalisé pour votre ville, la taille de votre flotte et vos prix — jamais de modèles préfaits."
+      },
+      {
+        "t": "Lancement & Croissance",
+        "d": "Nous gérons les campagnes, vous accueillez les élèves. Rapport tous les lundis."
+      }
+    ]
+  },
+  "contact": {
+    "getInTouch": "Contactez-nous",
+    "readyToFill": "Prêt à remplir vos voitures ?",
+    "description": "Parlez-nous de votre auto-école. Sous 48 heures, vous recevrez une stratégie gratuite adaptée à votre ville — sans aucun appel téléphonique obligatoire.",
+    "form": {
+      "firstName": "Prénom",
+      "phone": "Téléphone",
+      "city": "Ville",
+      "firstNamePlaceholder": "Sophie",
+      "phonePlaceholder": "+33 6 ...",
+      "cityPlaceholder": "Marrakech",
+      "submit": "Obtenez Votre Stratégie Gratuite",
+      "submitting": "Envoi en cours...",
+      "error": "Une erreur s'est produite. Veuillez réessayer.",
+      "success": {
+        "title": "Stratégie en approche !",
+        "message": "Nous avons bien reçu vos informations. Vous recevrez votre stratégie personnalisée par e-mail sous 48 heures.",
+        "sendAnother": "Envoyer une autre demande"
+      }
+    }
+  },
+  "footer": {
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "imprint": "Mentions Légales",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "youtube": "YouTube",
+    "copyright": "© 2026 Lanes Agency. Tous droits réservés.",
+    "builtFor": "Conçu pour les auto-écoles à travers l'Europe et l'Afrique du Nord."
+  }
+}

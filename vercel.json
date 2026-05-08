@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/webhook/:path*",
+      "destination": "https://automation-n8n.gln21u.easypanel.host/webhook/:path*"
+    }
+  ]
+}

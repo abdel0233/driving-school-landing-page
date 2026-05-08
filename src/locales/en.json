@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "Services": "Services",
+    "Portfolio": "Portfolio",
+    "Results": "Results",
+    "Contact": "Contact",
+    "getFreeAudit": "Get Free Audit"
+  },
+  "hero": {
+    "since": "Since 2020",
+    "schoolsScaled": "50+ Schools Scaled",
+    "marketingFor": "Marketing for driving schools",
+    "weMarket": "We market driving schools",
+    "wantToGrow": "that want to grow.",
+    "description": "A boutique agency for auto-écoles. We fill your cars with serious students — through ads, content and systems built for your city.",
+    "bookAudit": "Book a Free Audit",
+    "seeWork": "See our work"
+  },
+  "pains": {
+    "theReality": "The reality",
+    "struggling": "Struggling to fill your cars?",
+    "items": [
+      {
+        "title": "Empty seats, rising costs",
+        "text": "Your cars sit idle while overhead keeps climbing each month."
+      },
+      {
+        "title": "Same five referrals",
+        "text": "You rely on word of mouth and it caps how fast you can grow."
+      },
+      {
+        "title": "Ads that burn cash",
+        "text": "Boosted posts that bring tire-kickers, never serious students."
+      }
+    ]
+  },
+  "services": {
+    "whatWeDo": "What we do",
+    "fiveLevers": "Five levers.",
+    "oneEngine": "One growth engine.",
+    "description": "Every service is built for one industry — yours. No generic playbooks, no bloated retainers, no surprises.",
+    "items": [
+      {
+        "title": "Paid Ads",
+        "text": "Meta and TikTok funnels engineered to fill your calendar weekly."
+      },
+      {
+        "title": "Social Media",
+        "text": "Content systems that turn your school into the local authority."
+      },
+      {
+        "title": "SEO",
+        "text": "Rank first when locals search for driving lessons in your city."
+      },
+      {
+        "title": "Video Production",
+        "text": "Cinematic shoots inside your cars — built to convert on scroll."
+      },
+      {
+        "title": "Google My Business",
+        "text": "Reviews, photos, and ranking — own the map in your district."
+      }
+    ]
+  },
+  "portfolio": {
+    "selectedWork": "Selected work",
+    "workSpeaks": "Our work speaks.",
+    "items": [
+      { "label": "Facebook Ads Campaign — Auto-École Marrakech" },
+      { "label": "Brand Film — Drive Académie Casablanca" },
+      { "label": "TikTok Series — Permis Express Lyon" },
+      { "label": "Recruitment Funnel — Stadt Fahrschule Berlin" },
+      { "label": "Cinematic Showcase — Auto-École Khadija" },
+      { "label": "Promo Reel — Auto-École Khadija" },
+      { "label": "Student Success — Auto-École Chihab (Part 1)" },
+      { "label": "Student Success — Auto-École Chihab (Part 2)" },
+      { "label": "Student Success — Auto-École Chihab (Part 3)" }
+    ]
+  },
+  "stats": {
+    "items": [
+      { "l": "Schools Scaled" },
+      { "l": "Qualified Leads" },
+      { "l": "Average ROI" },
+      { "l": "Years Specialised" }
+    ]
+  },
+  "quotes": {
+    "items": [
+      {
+        "q": "We went from 12 enrolments a month to 47. They understand our business better than we do.",
+        "name": "Yassine El Amrani",
+        "city": "Auto-École Atlas — Marrakech"
+      },
+      {
+        "q": "First agency that actually shows up with numbers. Our cars haven't been empty since.",
+        "name": "Claire Dubois",
+        "city": "Permis Express — Lyon"
+      },
+      {
+        "q": "The video work alone changed how the city sees us. Bookings doubled in 90 days.",
+        "name": "Marco Rinaldi",
+        "city": "Scuola Guida Centro — Milan"
+      }
+    ]
+  },
+  "steps": {
+    "theProcess": "The process",
+    "threeSteps": "Three steps from",
+    "empty": "empty",
+    "toFullyBooked": "to fully booked.",
+    "items": [
+      {
+        "t": "Free Audit",
+        "d": "We dissect your funnel, ads and reputation. You get a written report in 48 hours."
+      },
+      {
+        "t": "Custom Strategy",
+        "d": "A bespoke plan for your city, fleet size and pricing — no templates, ever."
+      },
+      {
+        "t": "Launch & Scale",
+        "d": "We run the campaigns, you greet the students. Reporting every Monday."
+      }
+    ]
+  },
+  "contact": {
+    "getInTouch": "Get in touch",
+    "readyToFill": "Ready to fill your cars?",
+    "description": "Tell us about your school. Within 48 hours you'll receive a free strategy tailored to your city — no calls until you want one.",
+    "form": {
+      "firstName": "First Name",
+      "phone": "Phone",
+      "city": "City",
+      "firstNamePlaceholder": "Sofia",
+      "phonePlaceholder": "+33 6 ...",
+      "cityPlaceholder": "Marrakech",
+      "submit": "Get Your Free Strategy",
+      "submitting": "Sending...",
+      "error": "Something went wrong. Please try again.",
+      "success": {
+        "title": "Strategy incoming!",
+        "message": "We received your details. Expect your custom strategy in your inbox within 48 hours.",
+        "sendAnother": "Send another request"
+      }
+    }
+  },
+  "footer": {
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "imprint": "Imprint",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "youtube": "YouTube",
+    "copyright": "© 2026 Lanes Agency. All rights reserved.",
+    "builtFor": "Built for driving schools across Europe & North Africa."
+  }
+}
