@@ -18,6 +18,12 @@ export default defineConfig(({ mode }) => ({
         rewrite: (path) => path.replace(/^\/api\/webhook/, "/webhook"),
         secure: true,
       },
+      "/api/webhook-test": {
+        target: "https://automation-n8n.gln21u.easypanel.host",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/webhook-test/, "/webhook-test"),
+        secure: true,
+      },
     },
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),

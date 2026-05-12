@@ -3,6 +3,10 @@
     {
       "source": "/api/webhook/:path*",
       "destination": "https://automation-n8n.gln21u.easypanel.host/webhook/:path*"
+    },
+    {
+      "source": "/api/webhook-test/:path*",
+      "destination": "https://automation-n8n.gln21u.easypanel.host/webhook-test/:path*"
     }
   ]
 }
