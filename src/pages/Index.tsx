@@ -8,6 +8,9 @@ const video6 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778252097/uc
 const video7 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254349/chihab-1f_3L6ZdXjX_ja9mbw.mp4";
 const video8 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254338/chihab-2f_rqtAQjpj_zzobvp.mp4";
 const video9 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254339/chihab-3f_rOKObkad_sguigo.mp4";
+
+const cdnVideo = (url: string) => url.replace("/upload/", "/upload/q_auto:good,f_auto,w_920/");
+const videoPoster = (url: string) => url.replace("/upload/", "/upload/so_0/").replace(/\.[^/.]+$/, ".jpg");
 import { useRef, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import {
@@ -44,15 +47,15 @@ const services = [
 ];
 
 const portfolio = [
-  { video: video1, label: "Facebook Ads Campaign — Auto-École Marrakech" },
-  { video: video2, label: "Brand Film — Drive Académie Casablanca" },
-  { video: video3, label: "TikTok Series — Permis Express Lyon" },
-  { video: video4, label: "Recruitment Funnel — Stadt Fahrschule Berlin" },
-  { video: video5, label: "Cinematic Showcase — Auto-École Khadija" },
-  { video: video6, label: "Promo Reel — Auto-École Khadija" },
-  { video: video7, label: "Student Success — Auto-École Chihab (Part 1)" },
-  { video: video8, label: "Student Success — Auto-École Chihab (Part 2)" },
-  { video: video9, label: "Student Success — Auto-École Chihab (Part 3)" },
+  { video: cdnVideo(video1), label: "Facebook Ads Campaign — Auto-École Marrakech" },
+  { video: cdnVideo(video2), label: "Brand Film — Drive Académie Casablanca" },
+  { video: cdnVideo(video3), label: "TikTok Series — Permis Express Lyon" },
+  { video: cdnVideo(video4), label: "Recruitment Funnel — Stadt Fahrschule Berlin" },
+  { video: cdnVideo(video5), label: "Cinematic Showcase — Auto-École Khadija" },
+  { video: cdnVideo(video6), label: "Promo Reel — Auto-École Khadija" },
+  { video: cdnVideo(video7), label: "Student Success — Auto-École Chihab (Part 1)" },
+  { video: cdnVideo(video8), label: "Student Success — Auto-École Chihab (Part 2)" },
+  { video: cdnVideo(video9), label: "Student Success — Auto-École Chihab (Part 3)" },
 ];
 
 const stats = [
@@ -88,11 +91,37 @@ const Index = () => {
     phone: "",
     city: ""
   });
+  const [workingHours, setWorkingHours] = useState(4);
 
   useEffect(() => {
     document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.lang = i18n.language;
   }, [i18n.language]);
+
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+    
+    videoRefs.current.forEach((vid) => {
+      if (!vid) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            vid.load();
+            vid.play().catch(err => console.error("Video play failed:", err));
+          } else {
+            vid.pause();
+          }
+        });
+      }, { threshold: 0.3 });
+      
+      observer.observe(vid);
+      observers.push(observer);
+    });
+
+    return () => {
+      observers.forEach(o => o.disconnect());
+    };
+  }, []);
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
@@ -162,9 +191,9 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       {/* NAV */}
       <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/60">
-        <nav className="container flex items-center justify-between h-20">
-          <a href="#" className="flex items-center gap-2">
-            <span className="font-display text-2xl font-semibold tracking-tight">Lanes<span className="text-forest">.</span></span>
+        <nav className="container flex items-center justify-between h-16 sm:h-20">
+          <a href="#" className="flex items-center gap-2 shrink-0">
+            <span className="font-display text-xl sm:text-2xl font-semibold tracking-tight">Lanes<span className="text-forest">.</span></span>
           </a>
           <ul className="hidden md:flex items-center gap-10 text-sm">
             {nav.map((n) => (
@@ -175,11 +204,11 @@ const Index = () => {
               </li>
             ))}
           </ul>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <div className="relative">
               <button 
                 onClick={() => setIsLangOpen(!isLangOpen)} 
-                className="flex items-center gap-2 text-sm font-medium border border-border/60 rounded-full px-3 py-1.5 hover:border-foreground/20 transition-colors"
+                className="flex items-center gap-2 text-xs sm:text-sm font-medium border border-border/60 rounded-full px-2 py-1 sm:px-3 sm:py-1.5 hover:border-foreground/20 transition-colors shrink-0"
               >
                 <span className="w-5 text-center">{(i18n.language || 'en').toUpperCase()}</span>
                 <ChevronDown className={`w-3.5 h-3.5 opacity-50 transition-transform ${isLangOpen ? 'rotate-180' : ''}`} />
@@ -205,8 +234,8 @@ const Index = () => {
                 </>
               )}
             </div>
-            <a href="#contact" className="inline-flex items-center gap-2 bg-forest text-forest-foreground px-5 py-3 rounded-full text-sm font-medium hover:opacity-90 transition">
-              {t('nav.getFreeAudit')} <ArrowUpRight className="w-4 h-4" />
+            <a href="#contact" className="inline-flex items-center gap-2 bg-forest text-forest-foreground px-3 py-2 sm:px-5 sm:py-3 rounded-full text-xs sm:text-sm font-medium hover:opacity-90 transition shrink-0">
+              <span className="hidden sm:inline">{t('nav.getFreeAudit')}</span> <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             </a>
           </div>
         </nav>
@@ -241,6 +270,9 @@ const Index = () => {
             <p className="mt-8 text-lg text-muted-foreground max-w-md leading-relaxed">
               {t('hero.description')}
             </p>
+            <p className="mt-4 text-forest font-medium border-l-2 border-forest pl-4 py-1">
+              {t('hero.hardPromise')}
+            </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <a href="#contact" className="inline-flex items-center gap-2 bg-forest text-forest-foreground px-7 py-4 rounded-full text-sm font-medium hover:opacity-90 transition">
                 {t('hero.bookAudit')} <ArrowUpRight className="w-4 h-4" />
@@ -270,6 +302,34 @@ const Index = () => {
                 <p className="text-muted-foreground leading-relaxed">{t(`pains.items.${index}.text`)}</p>
               </div>
             ))}
+          </div>
+
+          {/* CALCULATOR */}
+          <div className="mt-24 max-w-2xl mx-auto bg-forest/5 border border-forest/10 rounded-3xl p-8 lg:p-12">
+            <h3 className="font-display text-2xl font-semibold mb-8 text-center">{t('pains.calculator.title')}</h3>
+            <div className="space-y-8">
+              <div>
+                <div className="flex justify-between mb-4">
+                  <label className="text-sm font-medium text-muted-foreground">{t('pains.calculator.workingHours')}</label>
+                  <span className="text-forest font-bold">{workingHours}h</span>
+                </div>
+                <input 
+                  type="range" 
+                  min="0" 
+                  max="8" 
+                  step="1"
+                  value={workingHours}
+                  onChange={(e) => setWorkingHours(parseInt(e.target.value))}
+                  className="w-full accent-forest"
+                />
+              </div>
+              <div className="pt-8 border-t border-forest/10 text-center">
+                <div className="text-sm uppercase tracking-widest text-muted-foreground mb-2">{t('pains.calculator.lostRevenue')}</div>
+                <div className="display-xl text-red-500/80 text-[clamp(2.5rem,5vw,4rem)]">
+                  ~{(8 - workingHours) * 500} <span className="text-lg opacity-60 font-normal">{t('pains.calculator.currency')}</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -350,12 +410,12 @@ const Index = () => {
                   <video
                     ref={(el) => { videoRefs.current[idx] = el; }}
                     src={p.video}
+                    poster={videoPoster(p.video)}
                     className="w-full h-full object-cover"
-                    autoPlay
                     muted
                     loop
                     playsInline
-                    preload="auto"
+                    preload="none"
                     onEnded={() => setPlayingIdx(null)}
                   />
                   {/* Play/Pause overlay */}

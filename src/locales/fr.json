@@ -10,9 +10,10 @@
     "since": "Depuis 2020",
     "schoolsScaled": "Plus de 50 Auto-écoles Développées",
     "marketingFor": "Marketing pour auto-écoles",
-    "weMarket": "Nous développons les auto-écoles",
-    "wantToGrow": "qui veulent grandir.",
-    "description": "Une agence boutique pour auto-écoles. Nous remplissons vos voitures avec des élèves sérieux — grâce à des publicités, du contenu et des systèmes conçus pour votre ville.",
+    "weMarket": "Remplissez votre auto-école",
+    "wantToGrow": "de nouveaux élèves chaque semaine",
+    "description": "Des places vides = argent perdu. On les remplit.",
+    "hardPromise": "Nous aidons les auto-écoles au Maroc à obtenir 20 à 50 nouveaux élèves chaque mois",
     "bookAudit": "Réserver un Audit Gratuit",
     "seeWork": "Voir notre travail"
   },
@@ -29,10 +30,16 @@
         "text": "Vous comptez sur le bouche-à-oreille et cela limite votre vitesse de croissance."
       },
       {
-        "title": "Des publicités qui brûlent votre budget",
-        "text": "Des publications boostées qui n'attirent que des curieux, jamais d'élèves sérieux."
+        "title": "Des publicités qui brûlent du cash",
+        "text": "Des posts boostés qui attirent des curieux, jamais des élèves sérieux."
       }
-    ]
+    ],
+    "calculator": {
+      "title": "Combien de revenus perdez-vous ?",
+      "workingHours": "Heures moyennes par voiture/jour",
+      "lostRevenue": "Perte mensuelle estimée",
+      "currency": "MAD"
+    }
   },
   "services": {
     "whatWeDo": "Ce que nous faisons",
@@ -135,7 +142,7 @@
       "firstNamePlaceholder": "Sophie",
       "phonePlaceholder": "+33 6 ...",
       "cityPlaceholder": "Marrakech",
-      "submit": "Obtenez Votre Stratégie Gratuite",
+      "submit": "Voir combien d'élèves vous perdez",
       "submitting": "Envoi en cours...",
       "error": "Une erreur s'est produite. Veuillez réessayer.",
       "success": {

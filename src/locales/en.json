@@ -10,9 +10,10 @@
     "since": "Since 2020",
     "schoolsScaled": "50+ Schools Scaled",
     "marketingFor": "Marketing for driving schools",
-    "weMarket": "We market driving schools",
-    "wantToGrow": "that want to grow.",
-    "description": "A boutique agency for auto-écoles. We fill your cars with serious students — through ads, content and systems built for your city.",
+    "weMarket": "Fill your driving school",
+    "wantToGrow": "with new students every week",
+    "description": "Empty seats = daily losses. We fill them.",
+    "hardPromise": "We help Moroccan driving schools get 20 to 50 new students every month",
     "bookAudit": "Book a Free Audit",
     "seeWork": "See our work"
   },
@@ -32,7 +33,13 @@
         "title": "Ads that burn cash",
         "text": "Boosted posts that bring tire-kickers, never serious students."
       }
-    ]
+    ],
+    "calculator": {
+      "title": "How much revenue are you losing?",
+      "workingHours": "Average hours per car/day",
+      "lostRevenue": "Estimated Monthly Loss",
+      "currency": "MAD"
+    }
   },
   "services": {
     "whatWeDo": "What we do",
@@ -135,7 +142,7 @@
       "firstNamePlaceholder": "Sofia",
       "phonePlaceholder": "+33 6 ...",
       "cityPlaceholder": "Marrakech",
-      "submit": "Get Your Free Strategy",
+      "submit": "See how many students you're losing",
       "submitting": "Sending...",
       "error": "Something went wrong. Please try again.",
       "success": {
