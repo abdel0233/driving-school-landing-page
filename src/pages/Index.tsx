@@ -162,7 +162,7 @@ const Index = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      const response = await fetch("/api/webhook/22e98cd2-99cf-4b22-b363-ba7d72f365ed", {
+      const response = await fetch(import.meta.env.VITE_WEBHOOK_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
