@@ -1,4 +1,6 @@
 import heroCar from "@/assets/hero-car.jpg";
+import logo from "@/assets/logo.png";
+import logoIcon from "@/assets/logo icon.png";
 const video1 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254324/project-1-1_3MHAbghf_kruq3c.mp4";
 const video2 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254345/project-2_ZY1ECD30_awtpcc.mp4";
 const video3 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254333/project-3-1_DECoIJf2_ijd5r9.mp4";
@@ -193,7 +195,7 @@ const Index = () => {
       <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/60">
         <nav className="container flex items-center justify-between h-16 sm:h-20">
           <a href="#" className="flex items-center gap-2 shrink-0">
-            <span className="font-display text-xl sm:text-2xl font-semibold tracking-tight">Lanes<span className="text-forest">.</span></span>
+            <img src={logoIcon} alt="Lanes icon" className="h-8 sm:h-10 w-auto" />
           </a>
           <ul className="hidden md:flex items-center gap-10 text-sm">
             {nav.map((n) => (
@@ -516,15 +518,15 @@ const Index = () => {
                 <div className="w-16 h-16 bg-forest text-forest-foreground rounded-full flex items-center justify-center mx-auto mb-6">
                   <Play className="w-6 h-6 rotate-[-90deg]" fill="currentColor" />
                 </div>
-                <h3 className="text-2xl font-display font-semibold mb-4">{t('contact.success.title', 'Strategy incoming!')}</h3>
+                <h3 className="text-2xl font-display font-semibold mb-4">{t('contact.form.success.title')}</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  {t('contact.success.message', 'We received your details. Expect your custom strategy in your inbox within 48 hours.')}
+                  {t('contact.form.success.message')}
                 </p>
                 <button 
                   onClick={() => setIsSubmitted(false)}
                   className="mt-8 text-sm font-medium text-forest hover:underline"
                 >
-                  {t('contact.success.sendAnother', 'Send another request')}
+                  {t('contact.form.success.sendAnother')}
                 </button>
               </div>
             ) : (
@@ -591,7 +593,7 @@ const Index = () => {
       <footer className="bg-forest text-forest-foreground">
         <div className="container py-16">
           <div className="grid md:grid-cols-3 gap-10 items-center">
-            <div className="font-display text-2xl font-semibold">Lanes<span className="opacity-60">.</span></div>
+            <div><img src={logo} alt="Lanes logo" className="h-9 w-auto brightness-0 invert" /></div>
             <ul className="flex gap-8 justify-center text-sm opacity-70">
               <li><a href="#" className="hover:opacity-100">{t('footer.privacy')}</a></li>
               <li><a href="#" className="hover:opacity-100">{t('footer.terms')}</a></li>
