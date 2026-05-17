@@ -132,7 +132,9 @@ const Index = () => {
   const scrollPortfolio = (dir: number) => {
     const el = portfolioRef.current;
     if (!el) return;
-    el.scrollBy({ left: dir * el.clientWidth * 0.7, behavior: "smooth" });
+    const isRtl = i18n.language === 'ar';
+    const factor = isRtl ? -1 : 1;
+    el.scrollBy({ left: dir * el.clientWidth * 0.7 * factor, behavior: "smooth" });
   };
 
   const togglePlay = (idx: number) => {
@@ -382,14 +384,14 @@ const Index = () => {
                 aria-label="Previous"
                 className="w-11 h-11 rounded-full border border-foreground/20 flex items-center justify-center hover:bg-forest hover:text-forest-foreground hover:border-forest transition"
               >
-                <ArrowLeft className="w-4 h-4" />
+                <ArrowLeft className="w-4 h-4 rtl:rotate-180" />
               </button>
               <button
                 onClick={() => scrollPortfolio(1)}
                 aria-label="Next"
                 className="w-11 h-11 rounded-full border border-foreground/20 flex items-center justify-center hover:bg-forest hover:text-forest-foreground hover:border-forest transition"
               >
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4 rtl:rotate-180" />
               </button>
             </div>
           </div>
@@ -397,7 +399,7 @@ const Index = () => {
 
         <div
           ref={portfolioRef}
-          className="overflow-x-auto hide-scrollbar pb-6 scroll-smooth snap-x snap-mandatory scroll-pl-4 lg:scroll-pl-6"
+          className="overflow-x-auto hide-scrollbar pb-6 scroll-smooth snap-x snap-mandatory scroll-ps-4 lg:scroll-ps-6"
         >
           <div className="flex gap-4 lg:gap-6 px-4 lg:px-[max(1.5rem,calc((100vw-1440px)/2+1.5rem))] w-max">
             {portfolio.map((p, idx) => (
