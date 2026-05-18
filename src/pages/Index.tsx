@@ -602,7 +602,8 @@ const Index = () => {
               <li><a href="#" className="hover:opacity-100">{t('footer.imprint')}</a></li>
             </ul>
             <ul className="flex gap-6 md:justify-end text-sm opacity-70">
-              <li><a href="#" className="hover:opacity-100">{t('footer.instagram')}</a></li>
+              <li><a href="https://web.facebook.com/profile.php?id=61572368781515" target="_blank" rel="noopener noreferrer" className="hover:opacity-100">{t('footer.facebook')}</a></li>
+              <li><a href="https://www.instagram.com/flowmark.ma/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100">{t('footer.instagram')}</a></li>
               <li><a href="#" className="hover:opacity-100">{t('footer.linkedin')}</a></li>
               <li><a href="#" className="hover:opacity-100">{t('footer.youtube')}</a></li>
             </ul>
