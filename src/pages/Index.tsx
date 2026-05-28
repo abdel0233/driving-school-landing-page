@@ -198,7 +198,7 @@ const Index = () => {
       <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/60">
         <nav className="container flex items-center justify-between h-16 sm:h-20">
           <a href="#" className="flex items-center gap-2 shrink-0">
-            <img src={logoIcon} alt="Lanes icon" className="h-8 sm:h-10 w-auto" />
+            <img src={logoIcon} alt="Flomark icon" className="h-8 sm:h-10 w-auto" />
           </a>
           <ul className="hidden md:flex items-center gap-10 text-sm">
             {nav.map((n) => (
@@ -596,7 +596,7 @@ const Index = () => {
       <footer className="bg-forest text-forest-foreground">
         <div className="container py-16">
           <div className="grid md:grid-cols-3 gap-10 items-center">
-            <div><img src={footerLogo} alt="Lanes logo" className="h-9 w-auto" /></div>
+            <div><img src={footerLogo} alt="Flomark logo" className="h-9 w-auto" /></div>
             <ul className="flex gap-8 justify-center text-sm opacity-70">
               <li><a href="#" className="hover:opacity-100">{t('footer.privacy')}</a></li>
               <li><a href="#" className="hover:opacity-100">{t('footer.terms')}</a></li>
