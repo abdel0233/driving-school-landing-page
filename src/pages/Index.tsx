@@ -595,7 +595,7 @@ const Index = () => {
       <footer className="bg-forest text-forest-foreground">
         <div className="container py-16">
           <div className="grid md:grid-cols-3 gap-10 items-center">
-            <div><img src={logo} alt="Lanes logo" className="h-9 w-auto brightness-0 invert" /></div>
+            <div><img src={logoIcon} alt="Lanes logo" className="h-9 w-auto" /></div>
             <ul className="flex gap-8 justify-center text-sm opacity-70">
               <li><a href="#" className="hover:opacity-100">{t('footer.privacy')}</a></li>
               <li><a href="#" className="hover:opacity-100">{t('footer.terms')}</a></li>
