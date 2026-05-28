@@ -1,6 +1,7 @@
 import heroCar from "@/assets/hero-car.jpg";
 import logo from "@/assets/logo.png";
 import logoIcon from "@/assets/logo icon.png";
+import footerLogo from "@/assets/footer logo.png";
 const video1 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254324/project-1-1_3MHAbghf_kruq3c.mp4";
 const video2 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254345/project-2_ZY1ECD30_awtpcc.mp4";
 const video3 = "https://res.cloudinary.com/dkjsjwzvl/video/upload/v1778254333/project-3-1_DECoIJf2_ijd5r9.mp4";
@@ -595,7 +596,7 @@ const Index = () => {
       <footer className="bg-forest text-forest-foreground">
         <div className="container py-16">
           <div className="grid md:grid-cols-3 gap-10 items-center">
-            <div><img src={logoIcon} alt="Lanes logo" className="h-9 w-auto" /></div>
+            <div><img src={footerLogo} alt="Lanes logo" className="h-9 w-auto" /></div>
             <ul className="flex gap-8 justify-center text-sm opacity-70">
               <li><a href="#" className="hover:opacity-100">{t('footer.privacy')}</a></li>
               <li><a href="#" className="hover:opacity-100">{t('footer.terms')}</a></li>
