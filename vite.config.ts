@@ -24,6 +24,12 @@ export default defineConfig(({ mode }) => ({
         rewrite: (path) => path.replace(/^\/api\/webhook-test/, "/webhook-test"),
         secure: true,
       },
+      "/api/chat": {
+        target: "https://n8n.lokatis.tech",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/chat/, "/webhook-test"),
+        secure: true,
+      },
     },
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),

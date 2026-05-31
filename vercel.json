@@ -7,6 +7,10 @@
     {
       "source": "/api/webhook-test/:path*",
       "destination": "https://automation-n8n.gln21u.easypanel.host/webhook-test/:path*"
+    },
+    {
+      "source": "/api/chat/:path*",
+      "destination": "https://n8n.lokatis.tech/webhook-test/:path*"
     }
   ]
 }
