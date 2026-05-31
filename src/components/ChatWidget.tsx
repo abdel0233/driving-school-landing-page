@@ -78,7 +78,7 @@ export default function ChatWidget() {
     setIsLoading(true);
 
     try {
-      const webhookUrl = import.meta.env.VITE_CHAT_WEBHOOK_URL as string;
+      const webhookUrl = "https://n8n.lokatis.tech/webhook/5c35fb94-55d0-400b-8742-3e8aed240ff8";
       const res = await fetch(webhookUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -90,8 +90,12 @@ export default function ChatWidget() {
       if (res.ok) {
         try {
           const data = await res.json();
-          // n8n returns { output: "..." }
-          reply = data?.output ?? data?.message ?? JSON.stringify(data);
+          // n8n returns { output: "..." } or [{ output: "..." }]
+          if (Array.isArray(data) && data.length > 0) {
+            reply = data[0]?.output ?? data[0]?.message ?? JSON.stringify(data);
+          } else {
+            reply = data?.output ?? data?.message ?? JSON.stringify(data);
+          }
         } catch {
           reply = await res.text();
         }
