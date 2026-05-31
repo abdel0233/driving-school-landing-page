@@ -90,8 +90,21 @@ export default function ChatWidget() {
       if (res.ok) {
         try {
           const data = await res.json();
-          // n8n webhook returns an array containing the output
-          reply = data[0].output;
+          console.log('n8n response:', JSON.stringify(data));
+          
+          if (typeof data === 'string') {
+            reply = data;
+          } else if (Array.isArray(data)) {
+            reply = data[0]?.output || data[0]?.text || JSON.stringify(data[0]);
+          } else if (data.output) {
+            reply = data.output;
+          } else if (data.text) {
+            reply = data.text;
+          } else if (data.message) {
+            reply = data.message;
+          } else {
+            reply = JSON.stringify(data);
+          }
         } catch {
           reply = await res.text();
         }
