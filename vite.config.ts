@@ -27,7 +27,7 @@ export default defineConfig(({ mode }) => ({
       "/api/chat": {
         target: "https://n8n.lokatis.tech",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/chat/, "/webhook-test"),
+        rewrite: (path) => path.replace(/^\/api\/chat/, "/webhook"),
         secure: true,
       },
     },

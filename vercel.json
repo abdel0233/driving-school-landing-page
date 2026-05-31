@@ -10,7 +10,7 @@
     },
     {
       "source": "/api/chat/:path*",
-      "destination": "https://n8n.lokatis.tech/webhook-test/:path*"
+      "destination": "https://n8n.lokatis.tech/webhook/:path*"
     }
   ]
 }
